@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Georgia", sans-serif;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+
+body,html  {
+  background: #ff9dc1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+  scroll-behavior: smooth;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.first-task {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+.btn-bg {
+  margin: 0; 
+  padding: 15px 30px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+.container {
+  background-color: #ffffff; /* White background for the container */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #d5006d; /* Dark pink for the heading */
+}
+
+input[type="text"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #d5006d; /* Dark pink border */
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #d5006d; /* Dark pink background */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c51162; /* Slightly darker pink on hover */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ff80ab; /* Lighter pink for the border */
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #d5006d; /* Dark pink for completed tasks */
+}
+
+.delete {
+  background-color: #ff4081; /* Medium pink for delete button */
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.third-task {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}

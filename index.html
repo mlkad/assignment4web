@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="first-task">
+    <button class='btn-bg'>Change background color</button>
+  </div>
+  <div class="second-task">
+    <div class="container">
+      <h1>To-Do List</h1>
+      <input type="text" id="taskInput" placeholder="Add a new task">
+      <button id="addTaskButton">Add Task</button>
+      <ul id="taskList"></ul>
+    </div>
+  </div>
+  <div class="third-task">
+    <input type="text" placeholder="Enter numbers separated by commas" id='inputData'>
+    <button id='sortAsceding'>Sort in asceding order</button>
+    <button id='sortDescending'>Sort in descending order</button>
+    <span id='sortedInput'></span>
+  </div>
+  <div class="fourth-task">
+    <div class="form">
+      <label for="num1">1st Number</label>
+      <input type="number" id='num1'> <br>
+      <label for="num2">2nd Number</label>
+      <input type="number" id='num2'>
+
+      <button onClick="calculate('*')" id='btn-multiply' value='multiply'>*</button>
+      <button onClick="calculate('/')" id='btn-divide' value='divide'>/</button>
+      <button onClick="calculate('+')" id='btn-add' value='add'>+</button>
+      <button onClick="calculate('-')" id='btn-substract' value='substract'>-</button>
+      <button onClick="calculate('**')" id='btn-pow' value='pow'>**</button>
+      <button onClick="calculate('%')" id='btn-modulo' value='modulo'>%</button>
+    </div>
+    <h3>The result is:
+      <span id='res'></span>
+    </h3>
+  </div>
+  <div class="fifth-task">
+    <input type="text" placeholder="Enter price" id='inputTax'>
+    <button onClick="calculateTax()">Calculate the tax</button>
+    <h3>The tax is:
+      <span id='tax'></span>
+    </h3>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
